@@ -1,0 +1,26 @@
+<html>
+<head>
+    <h1>Calculate Age</h1>
+    <script>
+        function a()
+        {
+            let a=new Date(document.getElementById("d1").value)
+            let y=new Date()
+            
+           let y1=(y-a)/(1000*60*60*24*365)
+           let year=parseInt((y-a)/(1000*60*60*24*365))
+           let month=parseInt((y1-year)*12)
+
+           document.getElementById("p1").innerHTML=`Age is : ${year} Year ${month} Month`
+         }
+
+    </script>
+</head>
+    <body>
+        Enter a Date :<input type="date" id="d1" onchange="a()"/>
+        <p id="p1"></p>
+    </body>
+
+
+
+</html>

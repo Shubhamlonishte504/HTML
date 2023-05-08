@@ -1,0 +1,21 @@
+<html>
+
+
+<script>
+    let arr=["Sunday","Monday","Tuesday","Wednesday","Thusday","Friday" ,"Saturday"]
+    function d()
+    {
+        let ans=document.getElementById("d1").value
+        let a= new Date(ans)
+        let b=a.getDay()
+    
+        document.getElementById("p1").innerHTML=`${arr[b]}`        
+    }
+
+
+</script>
+    <body>
+        <b>Date :</b><input type="date" id="d1" onchange="d()">
+        <p id="p1"></p>        
+    </body>
+</html>
