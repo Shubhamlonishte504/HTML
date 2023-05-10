@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $().ready(()=>{
+                $("#b1").click(()=>{
+                    let el1=$("#i1").val()
+                    let el2=$("#i1").val()
+                    let el3=$("#i1").val()
+                    // if(el1.checkValidity( )|| el2.checkValidity() || el3.checkValidity() ){
+                        $("#t1").val(()=>{
+                            let n= $('#i1').val()
+                            let f= $('#i2').val()
+                            let t= $('#i3').val()
+                            for(n=f;n<t+1;f++){
+                                let z=n*f
+                                $("#t1").append(`<tr><td>${n}*${f}</td><td>${z}</td></tr>`)
+                            }
+                        })
+                    // }
+                })
+            })
+
+        </script>
+    </head>
+    <body>
+        
+            NUMBER : <input type="number" placeholder="enter the number" id="i1" />
+            FROM : <input type="nymber" placeholder="from" id="i1" />
+            TO : <input type="number" placeholder="to" id="i1" />
+            <button id="b1">click</button>
+            <button id="b2">clear</button>
+        
+        <table border="1">
+            <thead>
+<tr><td>number*mul</td><td>table</td></tr>
+
+            </thead>
+            <tbody id="t1"></tbody>
+
+        </table>
+        <div></div>
+    
+    </body>
+</html>
